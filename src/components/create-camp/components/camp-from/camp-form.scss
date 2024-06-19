@@ -1,0 +1,31 @@
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &.checkbox {
+      flex-direction: row;
+    }
+  }
+
+  .programs {
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &.checkbox {
+        flex-direction: row;
+      }
+
+      &.both {
+      }
+    }
+  }
+}

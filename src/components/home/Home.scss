@@ -1,0 +1,54 @@
+.home-page {
+  h1 {
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-style: italic;
+    color: darkblue;
+  }
+
+  .country-city {
+    display: flex;
+    width: 100%;
+
+    div {
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        li {
+          border: 1px solid;
+          border-radius: 5px;
+          background-color: lightblue;
+          max-width: 300px;
+          padding: 5px;
+          &.active {
+            background-color: green;
+          }
+        }
+      }
+    }
+
+    .countries {
+      flex-grow: 1;
+
+      .country-form {
+        display: flex;
+        margin: 20px 0;
+      }
+    }
+
+    .cities {
+      flex-grow: 1;
+
+      .country-form {
+        display: flex;
+        margin: 5px 0;
+      }
+    }
+  }
+}
